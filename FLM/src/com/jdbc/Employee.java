@@ -10,7 +10,7 @@ public class Employee {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/prasanth", "root", "Prasanth@200");
+		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/prasanth", "root", "Prasanth@200" );
 		Statement stmt=conn.createStatement();
 		ResultSet rs=stmt.executeQuery("select * from employee");
 		while(rs.next()) {
